@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cars Required</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      text-align: center;
+      margin-top: 50px;
+      background-color: paleturquoise;
+    }
+
+    h1 {
+      color: black;
+    }
+
+    input {
+      padding: 5px;
+      margin: 10px;
+      border: 1px solid #888;
+      border-radius: 4px;
+    }
+
+    button {
+      padding: 6px 12px;
+      background-color: lightblue;
+      border: 1px solid #666;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: deepskyblue;
+      color: white;
+    }
+
+    #result {
+      margin-top: 15px;
+      font-size: 18px;
+      color: darkblue;
+      font-weight: 400;
+    }
+  </style>
+</head>
+<body>
+  <h1>Cars Required</h1>
+  <p>Enter number of members:</p>
+  <input type="number" id="members">
+  <button onclick="calculate()">Find Cars</button>
+  <p id="result"></p>
+
+  <script>
+    function calculate() {
+      let members = document.getElementById("members").value;
+      let totalCars = Math.ceil(members / 5); 
+      document.getElementById("result").innerText = "Cars required: " + totalCars;
+    }
+  </script>
+</body>
+</html>

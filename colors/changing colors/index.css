@@ -1,0 +1,36 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.bg {
+  height: 100vh;
+  background-color: burlywood;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.5s; 
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-family: sans-serif;
+}
+
+.btn {
+  width: 120px;
+  height: 35px;
+  margin: 5px;
+  border: none;
+  border-radius: 10px;
+  color: black;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.btn:hover {
+  transform: scale(1.1); 
+}

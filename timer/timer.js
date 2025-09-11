@@ -47,7 +47,7 @@ function startBtn() {
 
         time.textContent = (hours + ":" + minutes + ":" + seconds)
 
-    }, 10)
+    }, 1000)
 }
 
 function stopBtn() {
